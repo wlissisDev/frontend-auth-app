@@ -1,0 +1,40 @@
+.container{
+    color: #000;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+
+    display: grid;
+    place-content: center;
+    gap: 30px;
+}
+
+.title{
+    text-align: center;
+}
+
+.form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+
+.form input{
+    font-size: 16px;
+    padding: 15px;
+    background: #fff;
+    color: #000;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.submitBtn{
+    font-size: 26px;
+    padding: 15px;
+    border: none;
+    border-radius: 0;
+}
