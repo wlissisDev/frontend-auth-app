@@ -12,7 +12,7 @@ function App() {
         <Route element={<PrivateRoute />}>
           <Route path='/products' element={<Products />} />
         </Route>
-        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<Login />} />
         <Route path='/register' element={<Register />} />
       </Routes>
     
