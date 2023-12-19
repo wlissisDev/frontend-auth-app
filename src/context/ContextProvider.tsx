@@ -38,7 +38,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             }
 
             setIsFetch(true);
-            const result = await fetch("http://localhost:8000/login", options);
+            const result = await fetch("https://auth-app-coma.onrender.com/login", options);
 
             const dataUser = await result.json()
             setUser({
@@ -65,7 +65,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             }
 
             setIsFetch(true);
-            const result = await fetch("http://localhost:8000/register", options);
+            const result = await fetch("https://auth-app-coma.onrender.com/register", options);
             const dataUser = await result.json();
             console.log(dataUser);
             setIsFetch(false);
