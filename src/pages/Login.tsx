@@ -1,6 +1,7 @@
 import { FormEvent, useState } from 'react';
 import { useAuth } from '../utils/useAuth'
 import styles from './login.module.css'
+import { Link } from 'react-router-dom';
 
 export function Login() {
     const { login, isFetche } = useAuth();
@@ -41,6 +42,11 @@ export function Login() {
                 />
                 <button className={styles.submitBtn} type="submit">Entrar</button>
             </form>}
+            <Link to="/register"
+            style={{
+                fontWeight:"bold"
+            }}
+            >Criar conta</Link>
         </div>
 
     )

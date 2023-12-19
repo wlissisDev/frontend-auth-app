@@ -7,6 +7,6 @@ export const PrivateRoute = () => {
 
     let token =   user?.token
     return (
-            token ? <Outlet/> : <Navigate to="/login" />
+            token ? <Outlet/> : <Navigate to="/" />
     )
 }
