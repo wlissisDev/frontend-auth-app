@@ -1,12 +1,9 @@
 import { FormEvent, useState } from 'react';
 import { useAuth } from '../utils/useAuth'
 import styles from './login.module.css'
-import { useNavigate } from 'react-router-dom';
 
 export function Login() {
     const { login, isFetche } = useAuth();
-
-  
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
